@@ -27,7 +27,7 @@ This command starts the development server. Open http://localhost:3000 to view P
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/pegbana.git
+git clone https://github.com/Riteshh82/Drunk-dare-game.git
 cd pegbana
 ```
 ### Usage
@@ -35,13 +35,13 @@ cd pegbana
 - **Getting Started**: When you first load the application, click on the card to start the dare game.
 - **Generating Dares**: Each click on the card presents a new random dare.
 - **Vibration Control**: Click the bell icon to toggle vibration feedback on and off.
-- 
+  
 ### Technologies Used
 
 React
--Tailwind CSS
--FontAwesome for icons
--Contributing
+- Tailwind CSS
+- FontAwesome for icons
+- Contributing
 
 
 ### Acknowledgments
