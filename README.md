@@ -38,10 +38,10 @@ cd pegbana
   
 ### Technologies Used
 
-React
+- React+Vite
 - Tailwind CSS
 - FontAwesome for icons
-- Contributing
+- JavaScript
 
 
 ### Acknowledgments
