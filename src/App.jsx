@@ -49,7 +49,7 @@ const App = () => {
           onClick={toggleVibration}
         />
       </div> */}
-      <div className="relative w-56 h-80 mt-10 items-center">
+      <div className="relative w-56 h-96 mt-10 item-center">
         <Card 
           text={currentDareIndex === -1 ? "Tap to Start" : shuffledDares[currentDareIndex]} 
           styleClass="z-20 transform scale-100"
