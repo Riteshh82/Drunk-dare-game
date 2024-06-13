@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        '108': '27rem',
+      },
       animation: {
         shuffle: 'shuffle 0.5s ease-in-out',
       },

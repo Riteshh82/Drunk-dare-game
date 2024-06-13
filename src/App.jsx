@@ -39,17 +39,17 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-green-100 p-4">
-      <h1 className="text-5xl font-bold mb-8 text-green-700">PegBana</h1>
-      <div className="mb-8 flex items-center">
+    <div className="min-h-screen flex flex-col items-center bg-green-100 p-4">
+      <h1 className="text-5xl font-bold mb-8 text-green-700 mt-4">PegBana</h1>
+      {/* <div className="mb-8 flex items-center">
         <FontAwesomeIcon
           icon={vibrationEnabled ? faBell : faBellSlash}
           size="2x"
           className="cursor-pointer text-green-700"
           onClick={toggleVibration}
         />
-      </div>
-      <div className="relative w-56 h-80 mb-8">
+      </div> */}
+      <div className="relative w-56 h-80 mt-10 items-center">
         <Card 
           text={currentDareIndex === -1 ? "Tap to Start" : shuffledDares[currentDareIndex]} 
           styleClass="z-20 transform scale-100"
