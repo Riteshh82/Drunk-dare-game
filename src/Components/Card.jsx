@@ -7,6 +7,9 @@ const Card = ({ text, styleClass, onClick }) => {
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
   const handleClick = () => {
+    if (navigator.vibrate) {
+      navigator.vibrate(200); // Vibrate for 200ms
+    }
     setAnimate(true);
     setTimeout(() => {
       setAnimate(false);

@@ -3,7 +3,7 @@ import Card from './Components/Card';
 import dares from './data/dares';
 
 const App = () => {
-  const [currentDareIndex, setCurrentDareIndex] = useState(0);
+  const [currentDareIndex, setCurrentDareIndex] = useState(-1);
   const [shuffledDares, setShuffledDares] = useState([]);
 
   // Function to shuffle array
@@ -22,21 +22,21 @@ const App = () => {
 
   const getRandomDare = () => {
     // If we have displayed all dares, reshuffle
-    if (currentDareIndex === shuffledDares.length) {
+    if (currentDareIndex === shuffledDares.length - 1) {
       setShuffledDares(shuffleArray([...dares]));
       setCurrentDareIndex(0);
+    } else {
+      // Get next dare from shuffled list
+      setCurrentDareIndex((prevIndex) => prevIndex + 1);
     }
-
-    // Get current dare from shuffled list
-    setCurrentDareIndex((prevIndex) => prevIndex + 1);
   };
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-green-100 p-4">
-      <h1 className="text-5xl font-bold mb-8 text-green-700">PegBana</h1>
+      <h1 className="text-5xl font-bold mb-8 text-green-700 items-center">PegBana</h1>
       <div className="relative w-56 h-80 mb-8">
         <Card 
-          text={shuffledDares[currentDareIndex] || "Tap for a Dare"} 
+          text={currentDareIndex === -1 ? "Tap to Start" : shuffledDares[currentDareIndex]} 
           styleClass="z-20 transform scale-100"
           onClick={getRandomDare}
         />
